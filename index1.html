@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Scorecard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.jpg" type="image/x-icon">
+</head>
+<body>
+    <div class="scorecard-container">
+        <h1>Cricket Scorecard</h1>
+        <div class="scoreboard">
+            <div class="score-display">
+                <p>Score: <span id="score">0</span></p>
+                <p>Wickets: <span id="wickets">0</span></p>
+            </div>
+            <div class="controls">
+                <input type="number" id="runs" placeholder="Enter Runs(0,1,2,3,4,6):" min="0" max="6">
+                <button onclick="addRuns()">Add Runs</button>
+                <button onclick="addWicket()">Wicket</button>
+                <button onclick="resetScore()">Reset</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
